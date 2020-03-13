@@ -11,6 +11,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
   selectedOption : string;
   title = 'BOOKING';
   Booking = Prenotazioni;

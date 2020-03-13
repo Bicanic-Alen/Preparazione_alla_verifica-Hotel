@@ -1,7 +1,7 @@
 <h1>BOOKING</h1>
 
 <select [(ngModel)]="selectedOption"  (change)="onChange()">
-    <option [value]="booking.name" *ngFor="let h of Prenotazioni"> {{booking.name}}</option>
+    <option [value]="booking.name" *ngFor="let booking of Prenotazioni"> {{booking.name}}</option>
   </select> <br>
 <hr>
   <div *ngIf="selectedOption">
@@ -16,4 +16,6 @@
       <button (click)="onClick(f,t,n,s)"> aggiungi prenotazione </button>
     </form>
   </div>
+
+  <app-lista-pren [listaStanze] = roomList class="card"></app-lista-pren>
 

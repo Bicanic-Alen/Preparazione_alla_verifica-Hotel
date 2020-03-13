@@ -5,7 +5,7 @@ export class Room
 {
     public favoriteClass : string = "text-primary"
     constructor(
-        public prenotazione : Booking,
+        public booking : Booking,
         public from: Date,
         public to : Date,
         public Name : String,
