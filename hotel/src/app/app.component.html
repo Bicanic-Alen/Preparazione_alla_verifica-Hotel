@@ -1,0 +1,19 @@
+<h1>BOOKING</h1>
+
+<select [(ngModel)]="selectedOption"  (change)="onChange()">
+    <option [value]="booking.name" *ngFor="let h of Prenotazioni"> {{booking.name}}</option>
+  </select> <br>
+<hr>
+  <div *ngIf="selectedOption">
+    <h3>
+      aggiungi prenotazione
+    </h3>
+    <form>
+      <input type="date" #f> : from <br>
+      <input type="date" #t> : to <br>
+      <input #n> : nome
+      <input #s> : cognome<br>
+      <button (click)="onClick(f,t,n,s)"> aggiungi prenotazione </button>
+    </form>
+  </div>
+
